@@ -1,0 +1,40 @@
+Enter file contents herebody {
+   font-family:Verdana,serif;
+   border: 2px solid black;
+ border-collapse:collapse; }
+div#header,div#footer,div#content, div#nav {
+ padding:30px;
+  }
+
+div#header {
+ background-color:#03a9f4;
+  font-size:2em;
+ color:black;
+ weight:bold;
+ border-collapse:collapse;
+ } 
+
+div#content {
+  padding:30px;
+  
+  border-collapse:collapse; 
+  background-color:lightgray;
+  font-family:Verdana,serif;
+ }
+
+
+div#footer {
+   background-color:grey;
+   font-family:"Times New Roman","sans-serif";
+   color:white;
+   weight:bold;
+   font-size=150%;
+ }
+form {
+ padding:30px;
+ 
+ }
+ form button {
+ border:1px solid blue;
+ background-color:#F5FFFA;}
+ 
