@@ -1,0 +1,73 @@
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="anshul.css">
+
+<script>
+ function calc() {
+  var exp=document.getElementById("dem").value;
+  var std=document.getElementById("next").value;
+  
+  print((exp/std)*100);
+ }
+ 
+ function print(a) {
+   
+  
+  details=new User(a, " ");
+  details.dispClass();  
+  }
+  
+  
+  function User(optYield,suitClass)
+ {
+   this.optYield=optYield;
+   this.suitClass=suitClass;  
+  User.prototype.assign=function()
+   {
+    if(this.optYield>80) 
+	   this.suitClass="S1";
+	 else if(this.optYield>40 && this.optYield<80)
+        this.suitClass="S2";
+      else if(this.optYield>20 && this.optYield<40)
+         this.suitClass="S3";
+     else 
+          this.suitClass="N";
+    }
+  
+  User.prototype.dispClass=function()
+  {
+   this.assign(this.optYield);
+      window.alert(" The Productivity Rating Index  is: " + this.optYield );
+	  window.alert(" The Suitability Class is: " + this.suitClass  );
+
+   }
+  }
+ 
+
+
+</script>
+</head>
+
+<body>
+ <div id="header">
+ <h1>PROJECT-02A</h1>
+</div>
+<div id="content">
+<form>
+<h2 style: "align:center" "font-size:1.5em">Please Enter the Following Details</h2>
+Enter the expected value or actual yield
+<input id="dem" type="number" name="exp"><br><br>
+Enter the standard value of yield
+<input id="next" type="number" name="std"><br><br>
+<button type="button" onclick="calc()" value="Submit Data">Submit Data</button>
+ 
+ <p id= "result"></p>
+ </form>
+ </div>
+ <div id="footer">
+ <h2 style = "color:black" "text-align:center">
+                                                    Submitted By:
+                                                    Anshul Agrawal
+				</h2>
+ </body>
+ </html>
